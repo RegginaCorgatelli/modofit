@@ -26,12 +26,29 @@
     background-color: black;
 }
 
+.nav-mis-programas{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    text-align: right;
+    padding: 20px;
+}
+
 .nav-blog{
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
     text-align: right;
     padding: 20px;
+}
+
+.nav-mis-programas a{
+    text-decoration: none;;
+    color: whitesmoke;
+    font-weight: 750;
+    font-size: medium;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-blog a{
@@ -43,8 +60,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.nav-mis-programas a:hover{
+    color: #20da07;
+}
+
 .nav-blog a:hover{
     color: #20da07;
+}
+
+.barra-nav-mis-programas{
+    list-style-type: none;
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .barra-nav-blog{
