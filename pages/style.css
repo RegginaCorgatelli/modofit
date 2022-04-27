@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300&family=BIZ+UDMincho&family=Montserrat:ital,wght@1,900&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300&family=BIZ+UDMincho&family=Gravitas+One&family=Montserrat:ital,wght@1,900&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300&family=BIZ+UDMincho&family=Gravitas+One&family=Montserrat:ital,wght@0,400;1,900&family=Seymour+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.temas{
+    list-style-type: none;
+}
+
+
+.blog{
+    font-family: 'Gravitas One', cursive;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    text-align: left;
+    color: #20da07;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.fondo-blog{
+    background-color: black;
+}
+
+.nav-blog{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    text-align: right;
+    padding: 20px;
+}
+
+.nav-blog a{
+    text-decoration: none;;
+    color: whitesmoke;
+    font-weight: 750;
+    font-size: medium;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-blog a:hover{
+    color: #20da07;
+}
+
+.barra-nav-blog{
+    list-style-type: none;
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.temas{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+    "nutricion estilo fuerza resistencia";
+}
+
+.temas a{
+    margin-bottom: 10px;
+    text-align: left;
+    list-style-type: none;
+    display: inline;
+    padding: 50px;
+    height: 300px;
+    text-decoration: none;
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.temas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.grid-temas:hover{
+    transform: scale(1.1,1);
+    background-color: rgba(17, 17, 20, 0.76);
+}
+
+.pie-blog{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgba(39, 35, 35, 0.822);
+}
+
+.pie-blog a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+    margin: 20px;
+}
+
+/* Vista tablet */
+
+@media screen and (max-width: 768px){
+    .temas{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 100px);
+        grid-template-areas: 
+        "nutricion estilo"
+        "fuerza resistencia";
+        margin-top: 200px;
+    }
+}
